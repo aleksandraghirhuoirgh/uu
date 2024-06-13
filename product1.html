@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>,e,e,e,e</title>
+    <style>
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+        }
+        
+        .product-image {
+            max-width: 300px;
+        }
+        
+        .product-description {
+            max-width: 400px;
+        }
+        
+        .add-to-cart {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="https://ainex.ru/upload/iblock/147/147afe987fc4bfcc802f06d600d46ed3.jpg" alt="Product Image" style="height: 450px;">
+        </div>
+        <div class="product-description">
+            <h2>Блок питания Corsair RM750x</h2>
+            <p>Описание товара:</p>
+            <p>Цена: 9 900 рублей</p>
+            <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+    </div>
+
+    <script>
+        // Функция для добавления товара в корзину
+        function addToCart(product) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Товар добавлен в корзину!');
+        }
+
+        // Обработчик события для кнопки "Add to Cart"
+        document.querySelector('.add-to-cart').addEventListener('click', function() {
+            // Получаем информацию о товаре
+            const productName = document.querySelector('h2').innerText;
+            const productPrice = document.querySelector('p:nth-of-type(2)').innerText;
+            const productImage = document.querySelector('.product-image img').src;
+            
+            // Создаем объект товара
+            const product = {
+                name: productName,
+                price: productPrice,
+                image: productImage
+            };
+            
+            // Добавляем товар в корзину
+            addToCart(product);
+        });
+    </script>
+    <a href="cart.html" target="_blank">Открыть корзину</a>
+</body>
+</html>

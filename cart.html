@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Корзина</title>
+<style>
+    .cart-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px;
+    }
+
+    .cart-item {
+        max-width: 200px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .cart-item img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .remove-from-cart {
+        margin-top: 10px;
+        background-color: #ff4500;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .payment-form {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+
+    .payment-form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .payment-form input[type="text"],
+    .payment-form input[type="number"],
+    .payment-form select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .payment-form button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<div class="cart-container" id="cart-container">
+    <button onclick="displayCart">показать содержимое корзины</button>
+  <!-- Здесь будет отображаться содержимое корзины -->
+</div>
+
+<!-- Общая сумма и форма оплаты -->
+<div class="payment-form">
+    <h2>Данные для оформления товара</h2>
+    <label for="name">Ваше ФИО</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="tel">Номер телефона</label>
+    <input type="tel" id="tel" name="tel" required>
+    <h3>Сумма к оплате: <span id="total"></span> рублей</h3>
+    <button id="checkout">Оформить заказ</button>
+</div>
+
+<script>
+    // Функция для отображения содержимого корзины и подсчета общей суммы
+    function displayCart() {
+        const cartContainer = document.getElementById('cart-container');
+        const totalElement = document.getElementById('total');
+        cartContainer.innerHTML = '';
+        
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        let total = 0;
+        
+        cart.forEach(item => {
+          const cartItem = document.createElement('div');
+          cartItem.classList.add('cart-item');
+          cartItem.innerHTML = `
+            <img src="${item.image}" alt="Product Image">
+            <h3>${item.name}</h3>
+            <p>${item.price}</p>
+            <button class="remove-from-cart" onclick="removeFromCart('${item.name}')">Удалить товар из корзины</button>
+          `;
+          cartContainer.appendChild(cartItem);
+          
+          // Подсчет общей суммы
+          total += parseFloat(item.price.replace('$', ''));
+        });
+        
+        // Отображение общей суммы
+        totalElement.textContent = total.toFixed(2);
+    }
+
+// Функция для удаления товара из корзины
+function removeFromCart(productName) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart = cart.filter(item => item.name !== productName);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    displayCart();
+}
+
+document.getElementById('checkout').addEventListener('click', function() {
+    // Ваш код для обработки оплаты здесь
+    alert('Спасибо за покупку!');
+    // Очистить корзину после оплаты
+    localStorage.removeItem('cart');
+    displayCart();
+});
+
+displayCart();
+</script>
+</body>
+</html>
+

@@ -1,0 +1,546 @@
+body {
+   
+    margin: 0;
+    
+}
+.k {
+    background-image: url('https://images.wallpaperscraft.ru/image/single/piony_tsvety_buket_142285_3840x2160.jpg');
+    background-size: 100%;
+}
+.verh {
+    display:inline-block;
+top: 0;
+left: 0;
+position: absolute;
+width: 100%;
+height: 100px;
+background-color: #E5BABF;
+}
+.aa {
+display:inline-block;
+font-family: 'Impact', fantasy;
+font-size: 50px;
+padding-left: 0px;
+color: #6c875f;
+}
+#o {
+    background-color: rgb(255, 255, 255);
+}
+.sered {
+    text-align: center;
+    background-color: rgba(209, 169, 169, 0.500);
+    background-repeat: no-repeat;
+    background-size: cover;
+width: 100%;
+height: 820px;
+
+
+}
+.lam {
+width: 430px;
+height: 300px;
+display: block;
+padding-top: 280px;
+margin-left: auto;
+margin-right: auto;
+}
+.noviy {
+text-align: center;
+text-decoration: none;
+font-family: 'Verdana', sans-serif;
+font-size: 40px;
+margin-top:10px;
+margin-bottom: 0;
+color: #ffefdf;
+}
+.niz {
+vertical-align: middle;
+justify-content: center;
+background-color: #E5BABF;
+padding-top: 30px;
+height: 123px;
+}
+.top {
+    margin-top: 8px;
+margin-left: 100px;
+font-size: 38px;
+text-decoration: none;
+color: #FCF1EF;
+text-align: right;
+}
+.niz img {
+    left: 45%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}
+.telega {
+    font-size: 20px;
+    text-decoration: none;
+    color: #FCF1EF;
+    min-height: 10em;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.alb {
+    background-color: rgba(250, 250, 250, 0.377);
+    background-size: cover;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+.linkalb {
+    text-decoration: none;
+    color: rgb(31, 31, 29);
+    padding-left: 130px;
+    font-size: 20px;
+}
+.pecna {
+    padding-top: 280px;
+margin-left: auto;
+margin-right: auto;
+    display: block;
+    transition: 3s;
+    width: 200px;
+    height: 200px;
+}
+.pecna:hover {
+    transform: scale(1.1);
+}
+.center {
+  text-align: center;
+    height: 850px;
+}
+
+#x, #y, #c, #a {
+    padding-left: 130px;
+    padding-top: 200px;
+    }
+    #q, #h, #b {
+        padding-left: 130px;
+        padding-top: 100px;
+        }
+.kar {
+    display: inline-block;
+}
+
+.zzanaveska {
+    background-image: url('https://farm5.staticflickr.com/4368/35709270613_83ed6ec949_o.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#tr {
+    padding-top: 200px;
+}
+.karzan {
+    width: 350px;
+    height: 350px;
+    position: center;
+    
+    margin-top: 150px;
+}
+.product-description {
+  max-width: 400px;
+  display: block;
+  padding-left: 100px;
+  width: 25%;
+  padding-top: 20px;
+  font-size: 25px;
+  color: #0b0c0c;
+}
+.product-container {
+  text-align: center;
+  height: 850px;
+}
+.zzz {
+    display: block;
+  padding-left: 100px;
+  width: 25%;
+  padding-top: 20px;
+  font-size: 25px;
+  color: #0b0c0c;
+}
+
+.iskr {
+    background-image: url('img/ii.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.table {
+  padding-top: 20%;
+  margin: auto;
+  border: 1px solid black;
+}
+.luboff {
+    background-image: url('https://flomaster.top/o/uploads/posts/2023-11/1699404388_flomaster-top-p-khvoinii-les-estetika-narisovannie-instagr-5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.brizz {
+    background-image: url('https://images.wallpaperscraft.ru/image/single/zakat_derevia_osen_126265_3840x2400.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.zza {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  padding-top: 30px;
+  font-size: 25px;
+  color: #ebecec;
+}
+.krl {
+    background-image: url('img/kk2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dobr {
+    background-image: url('img/tuman.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hldn {
+    background-image: url('https://images.wallpaperscraft.ru/image/single/holmy_doroga_trava_257727_3941x5927.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.concerts {
+    background-image: url('img/lampabikt.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.text {
+    font-size: 30px;
+    color: #ebecec;
+    font-family: 'Impact', fantasy;
+    padding-left: 85px;
+    padding-top: 100px;
+}
+.bilet {
+    font-size: 30px;
+    font-family: 'Impact', fantasy;
+    padding-left: 85px;
+    padding-top: 300px;
+    
+}
+.textd {
+    color: #ebecec;
+    text-decoration: none;
+    border: 3px solid white;
+    padding: 5px;
+}
+.forma {
+    background-image: url('img/kk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+h1 {
+    padding: 30px;
+    text-align: center;
+    color: #ebecec;
+}
+.ima, .tip, .vam {
+    color: #ebecec;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 0;
+
+}
+#otpr {
+    border-radius: 10%;
+    height: 30px;
+    width: 150px;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    margin-left: 150px;
+}
+.verh {
+    padding-top: 30px;
+}
+.k div ul li {
+    position: relative;
+    float: left;
+    list-style: none;
+    font-size: 50px;
+    text-decoration: none;
+    color: #6c875f;
+}
+ li a {
+    font-size: 20px;
+text-decoration: none;
+color: #6c875f;
+  
+    display:block;
+}
+.k div ul li a:hover {
+    background-color: #b295cf;
+    color: #544033;
+}
+.k div ul li ul {
+    position: absolute;
+    left: 100px;
+    width: 200px;
+    background: #ebecec;
+    display: none;
+}
+.k div ul li ul li {
+    width: 100%;
+    border: 1px solid green;
+}
+.k div ul li:hover > ul {
+    display: initial;
+}
+
+* { margin: 0; padding: 0; 
+} 
+.slider { width: 1200px; height: 800px; overflow: hidden; border: 10px solid 
+rgb(245, 236, 236); 
+} 
+.middle { position: absolute; top: 50%; left: 50%; transform: translate(-50%, 
+-50%); 
+} .navigation { position: absolute; bottom: 16px; left: 50%; transform: 
+translateX(-50%); display: flex; } 
+.bar { width: 30px; height: 8px; margin: 
+6px; cursor: pointer; background-color: rgb(223, 213, 213); opacity: .5; border-radius: 
+10px; transition: all 0.4s ease; 
+} 
+.bar:hover { opacity: 1; transform:scale(1.1); } input[name="r"] { position: 
+absolute; visibility: hidden; } 
+.slides { width: 400%; height: 100%; display: flex; } 
+.slide { width: 25%; transition: all 0.6s ease; 
+} 
+.img { width: 100%; height: 80%; } #r1:checked ~
+ .s1 { margin-left: 0; } 
+#r2:checked ~ .s1 { margin-left: -25%; } #r3:checked ~ 
+.s1 { margin-left: -50%; 
+} #r4:checked ~ .s1 { margin-left: -75%; 
+}
+#r5:checked ~
+ .s1 { margin-left: -100%; } 
+ #r6:checked ~
+ .s1 { margin-left: -125%; } 
+ #r7:checked ~
+ .s1 { margin-left: -150%; } 
+ .fotoo {
+    background-image: url('img/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+ }
+#sale {
+    width: 450px;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    border-radius: 9%;
+    background: linear-gradient(to bottom right, rgba(119, 82, 13, 0.847), 
+    rgba(105, 10, 10, 0.677));
+    font-size: 50px;
+    color: #ebecec;
+    opacity: 0;
+    animation: ani 5s forwards;
+}
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  .b {
+      font-size: 50px;
+  }
+  .alb div ul li a:hover {
+    background-color: #b295cf;
+    color: #544033;
+}
+.alb div ul li ul {
+    position: absolute;
+    left: 100px;
+    width: 200px;
+    background: #ebecec;
+    display: none;
+}
+.alb div ul li ul li {
+    width: 100%;
+    border: 1px solid green;
+}
+.alb div ul li:hover > ul {
+    display: initial;
+}
+
+
+.cart {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #364364;
+    transition: 0.1s;
+    cursor: pointer;
+    position: fixed; /* Фиксированное расположение */
+    top: 50px; /* в правом верхнем углу */
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    padding: 15px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Увеличиваем кнопку при наведении на нее */
+  .cart:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Стилизуем счетчик товаров */
+  .cart__num {
+    position: absolute;
+    background-color: #d62240;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    top: -5px;
+    right: -5px;
+  }
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.33); /* Небольшое затемнение на фоне */
+    z-index: 1000; /* Поверх всех окон */
+    width: 100%;
+    height: 100%;
+    display: none; /* По умолчанию скрываем окно */
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    overflow-y: scroll;
+  }
+  
+  /* Стилизация контейнера окна */
+  .popup__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Распределяем элементы внутри равномерно */
+    width: 100%;
+    max-width: 800px;
+    min-height: 300px;
+    background-color: #fff;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  /* Элементы окна (заголовок, список товаров, вывод стоимости) */
+  .popup__item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+ 
+  
+  .popup__title {
+    font-size: 20px;
+  }
+  
+  /* Стили для вывода товара */
+  .popup__product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .popup__product-wrap {
+    display: flex;
+    align-items: center;
+  }
+  
+  .popup__product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  
+  .popup__product-title {
+    max-width: 300px;
+    font-weight: 500;
+  }
+  
+  .popup__product-price {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+  
+  /* Стили для кнопки удаления товара */
+  .popup__product-delete {
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+    color: #d62240;
+  }
+  
+  /* Стили для вывода стоимости товаров */
+  .popup__cost {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+  }
+  
+  .popup__cost-title {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #364364;
+    text-align: right;
+  }
+  
+  .popup__cost-value {
+    font-size: 20px;
+  }
+  
+  /* Стили для кнопки закрытия окна */
+  .popup__close {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    color: rgba(54, 67, 100, 0.7);
+    font-size: 20px;
+  }
+  
+  .popup__close:hover {
+    color: rgb(54, 67, 100);
+  }
+  
+  .popup--open {
+    display: flex;
+  }
+
+#tgt, #rer{
+  background-color: red;
+}
