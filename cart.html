@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Корзина</title>
 <style>
     .cart-container {
+        position: relative;
+        top: 200px;
+        
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -27,16 +31,19 @@
 
     .remove-from-cart {
         margin-top: 10px;
-        background-color: #ff4500;
+        background-color: #E5BABF;
         color: #fff;
         border: none;
         cursor: pointer;
     }
 
     .payment-form {
-        margin-top: 20px;
+        margin-top: 250px;
         padding: 20px;
         border: 1px solid #ddd;
+        width: 500px;
+        position: relative;
+        left: 36%;
     }
 
     .payment-form label {
@@ -55,14 +62,26 @@
 
     .payment-form button {
         padding: 10px 20px;
-        background-color: #007bff;
+        background-color: #d9dfc0;
         color: #fff;
         border: none;
         cursor: pointer;
     }
 </style>
 </head>
-<body>
+<body class="k">
+    <div class="verh">
+        <ul>
+            <li><a class="top" href="albom.html">Каталог товаров</a>
+            </li>
+            <li><a class="top" href="fav.html">Избранное</a>
+            </li>
+            <li> <a class="top" href="cart.html">Корзина</a></li>
+            <li> <a class="top" href="foto.html">Как нас найти</a></li>
+            
+        </ul>
+    </div>
+    <div class="center" id="ogeo">
 <div class="cart-container" id="cart-container">
     <button onclick="displayCart">показать содержимое корзины</button>
   <!-- Здесь будет отображаться содержимое корзины -->
@@ -77,10 +96,16 @@
     <input type="email" id="email" name="email" required>
     <label for="tel">Номер телефона</label>
     <input type="tel" id="tel" name="tel" required>
-    <h3>Сумма к оплате: <span id="total"></span> рублей</h3>
+  <br>
+  <br>
     <button id="checkout">Оформить заказ</button>
 </div>
-
+</div>
+<div class="niz">
+    <a class="telega" href="https://t.me/lampabikt"><img src="https://cdn.icon-icons.com/icons2/3941/PNG/512/instagram_insta_logo_icon_250828.png"></a> 
+    <a class="telega" href="https://t.me/lampabikt"><img src="https://cdn-icons-png.flaticon.com/128/4701/4701496.png"></a>
+    <a class="telega" href="https://vk.com/lampabikt"><img src="https://cdn-icons-png.flaticon.com/128/1236/1236871.png"></a>    
+    </div> 
 <script>
     // Функция для отображения содержимого корзины и подсчета общей суммы
     function displayCart() {
